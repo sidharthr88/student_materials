@@ -32,7 +32,7 @@ const Feedback = () => {
     try{
 
       await axios.post(
-        "http://localhost:5000/feedback/add",
+        "/feedback/add",
         form
       );
 

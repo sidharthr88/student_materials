@@ -34,7 +34,7 @@ const StudentList = () => {
     try{
 
       const response = await axios.get(
-        "http://localhost:5000/users"
+        "/users"
       );
 
       setStudents(response.data);
