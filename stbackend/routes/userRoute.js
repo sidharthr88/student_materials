@@ -22,7 +22,7 @@ function verifyToken(req,res,next){
 }
 
 // Register User
-router.post("/register", verifyToken, async (req, res) => {
+router.post("/register", async (req, res) => {
     try {
         const {
             regNo,

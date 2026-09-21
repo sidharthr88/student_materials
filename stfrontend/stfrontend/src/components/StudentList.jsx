@@ -33,12 +33,16 @@ const StudentList = () => {
 
     try{
 
-      const response = await axios.get(
-        "/users"
-      );
+  const response = await axios.get(
+  "/api/users",
+  {
+    headers: {
+      token: localStorage.getItem("logintoken")
+    }
+  }
+);
 
-      setStudents(response.data);
-
+setStudents(response.data);
     }
     catch(error){
 
